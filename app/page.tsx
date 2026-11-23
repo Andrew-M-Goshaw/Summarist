@@ -1,22 +1,31 @@
+import {
+  AiFillBulb,
+  AiFillAudio,
+  AiOutlineHeatMap,
+  AiOutlineSafety,
+  AiFillCrown,
+} from "react-icons/ai";
+import "tailwindcss";
+
 export default function Home() {
   return (
-    <body>
-      <nav className="h-80px">
+    <main>
+      <nav className="h-[80px]">
         <div className="flex justify-between items-center max-w-[1070px] w-full h-full mx-auto px-6">
           <figure className="max-w-[200px]">
-            <img className="w-full h-full" src="" alt="logo" />
+            <img className="w-full h-full" src="logo.png" alt="logo" />
           </figure>
           <ul className="flex gap-6">
             <li className="cursor-pointer text-[#2bd97c] transition-colors duration-100 hover:text-[#2bd97c]">
               Login
             </li>
-            <li className="sm:hidden md:flex cursor-not-allowed text-[#032b41] transition-colors duration-100">
+            <li className="hidden md:flex cursor-not-allowed text-[#032b41] transition-colors duration-100">
               About
             </li>
-            <li className="sm:hidden md:flex cursor-not-allowed text-[#032b41] transition-colors duration-100">
+            <li className="hidden md:flex cursor-not-allowed text-[#032b41] transition-colors duration-100">
               Contact
             </li>
-            <li className="sm:hidden md:flex cursor-not-allowed text-[#032b41] transition-colors duration-100">
+            <li className="hidden md:flex cursor-not-allowed text-[#032b41] transition-colors duration-100">
               Help
             </li>
           </ul>
@@ -28,21 +37,21 @@ export default function Home() {
             <div className="flex">
               <div className="w-full">
                 <div className="text-4xl font-bold mb-6 text-[#032b41]">
-                  Gain more knowledge <br className="sm: hidden md:flex" /> in
-                  less time
+                  Gain more knowledge <br className="hidden md:flex" /> in less
+                  time
                 </div>
                 <div className="text-[#394547] text-lg font-light mb-6 leading-relaxed">
                   Great summaries for busy people,{" "}
-                  <br className="sm: hidden md:flex" /> individuals who barely
-                  have time to read, <br className="sm: hidden md:flex" /> and
-                  even people who don&apos;t like to read.
+                  <br className="hidden md:flex" /> individuals who barely have
+                  time to read, <br className="hidden md:flex" /> and even
+                  people who don&apos;t like to read.
                 </div>
                 <button className="bg-[#2bd97c] text-[#032b41] w-full h-10 rounded-md text-base transition-colors duration-200 flex items-center justify-center max-w-[300px] min-w-[180px]">
                   Login
                 </button>
               </div>
               <figure className="w-full flex justify-end">
-                <img src="" alt="landing" />
+                <img src="landing.png" alt="landing" />
               </figure>
             </div>
           </div>
@@ -68,7 +77,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center text-center">
                 <div className="flex justify-center mb-2 text-[#032b41]">
-                  {/* <AiFillBulb /> */}
+                  <AiFillBulb />
                 </div>
                 <div className="text-2xl text-[#032b41] mb-4 font-medium">
                   Find your next read
@@ -79,7 +88,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center text-center">
                 <div className="flex justify-center mb-2 text-[#032b41]">
-                  {/* <AiFillAudio /> */}
+                  <AiFillAudio />
                 </div>
                 <div className="text-2xl text-[#032b41] mb-4 font-medium">
                   Briefcasts
@@ -138,7 +147,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex gap-[80px] mb-[96px]">
-                <div className="sm:order-1 md:order-0 w-full flex flex-col justify-center gap-[24px] bg-customBackground py-10 px-6">
+                <div className="sm:order-1 md:order-0 w-full flex flex-col justify-center gap-[24px] bg-[#f1f6f4] py-10 px-6">
                   <div className="flex gap-4">
                     <div className="text-[#0365f2] text-xl font-semibold mt-1">
                       91%
@@ -203,7 +212,9 @@ export default function Home() {
               <div className="bg-[#fff3d7] p-4 mb-8 rounded font-light">
                 <div className="flex gap-2 mb-2 text-[#032b41]">
                   <div className="review name">Hanna M.</div>
-                  <div className="flex">{/* <BsStarFill /> */}</div>
+                  <div className="flex">
+                    <AiOutlineHeatMap />
+                  </div>
                 </div>
                 <div className="text-[#394547] tracking-tight leading-normal">
                   This app has been a <b>game-changer</b> for me! It&apos;s
@@ -214,7 +225,9 @@ export default function Home() {
               <div className="bg-[#fff3d7] p-4 mb-8 rounded font-light">
                 <div className="flex gap-2 mb-2 text-[#032b41]">
                   <div className="review name">David B.</div>
-                  <div className="flex">{/* <BsStarFill /> */}</div>
+                  <div className="flex">
+                    <AiOutlineHeatMap />
+                  </div>
                 </div>
                 <div className="text-[#394547] tracking-tight leading-normal">
                   I love this app! It provides
@@ -226,7 +239,9 @@ export default function Home() {
               <div className="bg-[#fff3d7] p-4 mb-8 rounded font-light">
                 <div className="flex gap-2 mb-2 text-[#032b41]">
                   <div className="review name">Nathan S.</div>
-                  <div className="flex">{/* <BsStarFill /> */}</div>
+                  <div className="flex">
+                    <AiOutlineHeatMap />
+                  </div>
                 </div>
                 <div className="text-[#394547] tracking-tight leading-normal">
                   This app is a great way to get the main takeaways from a book
@@ -238,7 +253,9 @@ export default function Home() {
               <div className="bg-[#fff3d7] p-4 mb-8 rounded font-light">
                 <div className="flex gap-2 mb-2 text-[#032b41]">
                   <div className="review name">Ryan R.</div>
-                  <div className="flex">{/* <BsStarFill /> */}</div>
+                  <div className="flex">
+                    <AiOutlineHeatMap />
+                  </div>
                 </div>
                 <div className="text-[#394547] tracking-tight leading-normal">
                   If you&apos;re a busy person who
@@ -266,7 +283,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
               <div className="bg-[#d7e9ff] flex flex-col items-center text-center py-6 pb-10 rounded-[12px]">
                 <div className="flex items-center h-[60px] gap-1">
-                  {/* <BiCrown /> */}
+                  <AiFillCrown />
                 </div>
                 <div className="text-3xl text-[#032b41] font-semibold mb-4">
                   3 Million
@@ -278,8 +295,7 @@ export default function Home() {
                   <div className="flex items-center h-[60px] gap-1">
                     <svg className="text-[#0365f2] w-12 h-12">
                       <svg className="w-5 h-5">
-                        {/* <BsStarFill />
-                        <BsStarHalf /> */}
+                        <AiOutlineHeatMap />
                       </svg>
                     </svg>
                   </div>
@@ -292,7 +308,7 @@ export default function Home() {
                 </div>
                 <div className="bg-[#d7e9ff] flex flex-col items-center text-center py-6 pb-10 rounded-[12px]">
                   <div className="flex items-center h-[60px] gap-1">
-                    {/* <RiLeafLine /> */}
+                    <AiOutlineSafety />
                   </div>
                   <div className="text-3xl text-[#032b41] font-semibold mb-4">
                     97%
@@ -419,6 +435,6 @@ export default function Home() {
           </div>
         </div>
       </footer>
-    </body>
+    </main>
   );
 }
