@@ -4,7 +4,11 @@ import {
   AiOutlineHeatMap,
   AiOutlineSafety,
   AiFillCrown,
+  AiFillFileText,
 } from "react-icons/ai";
+import Image from "next/image";
+import logo from "../public/logo.png";
+import landing from "../public/landing.png";
 
 export default function Home() {
   return (
@@ -12,7 +16,12 @@ export default function Home() {
       <nav className="h-[80px]">
         <div className="flex justify-between items-center max-w-[1070px] w-full h-full mx-auto px-6">
           <figure className="max-w-[200px]">
-            <img className="w-full h-full" src="logo.png" alt="logo" />
+            <Image
+              className="w-full h-auto"
+              src={logo}
+              sizes="200px"
+              alt="logo"
+            />
           </figure>
           <ul className="flex gap-6">
             <li className="cursor-pointer text-[#2bd97c] transition-colors duration-100 hover:text-[#2bd97c]">
@@ -49,8 +58,8 @@ export default function Home() {
                   Login
                 </button>
               </div>
-              <figure className="w-full flex justify-end">
-                <img src="landing.png" alt="landing" />
+              <figure className="w-full h-auto">
+                <Image src={landing} size="200px" alt="landing" />
               </figure>
             </div>
           </div>
@@ -59,13 +68,13 @@ export default function Home() {
       <section id="">
         <div className="py-10 w-full">
           <div className="max-w-[1070px] w-full mx-auto px-6">
-            <div className="text-[32px] text-[#032b41] text-center mb-8 font-bold">
+            <h2 className="text-[32px] text-[#032b41] text-center mb-8 font-bold">
               Understand books in few minutes
-            </div>
-            <div className="grid grid-cols-3 gap-10 mb-24">
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-24">
               <div className="flex flex-col items-center text-center">
                 <div className="flex justify-center mb-2 text-[#032b41]">
-                  {/* <AiFillFileText /> */}
+                  <AiFillFileText className="w-12 h-12 md:w-[60px] md:h-[60px]" />
                 </div>
                 <div className="text-2xl text-[#032b41] mb-4 font-medium">
                   Read or listen
@@ -76,7 +85,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center text-center">
                 <div className="flex justify-center mb-2 text-[#032b41]">
-                  <AiFillBulb />
+                  <AiFillBulb className="w-12 h-12 md:w-[60px] md:h-[60px]" />
                 </div>
                 <div className="text-2xl text-[#032b41] mb-4 font-medium">
                   Find your next read
@@ -87,7 +96,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center text-center">
                 <div className="flex justify-center mb-2 text-[#032b41]">
-                  <AiFillAudio />
+                  <AiFillAudio className="w-12 h-12 md:w-[60px] md:h-[60px]" />
                 </div>
                 <div className="text-2xl text-[#032b41] mb-4 font-medium">
                   Briefcasts
@@ -97,24 +106,24 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex gap-[80px] mb-24">
+            <div className="flex flex-col md:flex-row gap-8 md:gap-20 mb-8 md:mb-24">
               <div className="w-full flex flex-col justify-center">
-                <div className="text-[32px] font-medium text-[#6b757b] mb-4 active:text-[#2bd97c]">
+                <div className="text-2xl text-[32px] font-medium text-[#6b757b] mb-4 active:text-[#2bd97c]">
                   Enhance your knowledge
                 </div>
-                <div className="text-[32px] font-medium text-[#6b757b] mb-4 active:text-[#2bd97c]">
+                <div className="text-2xl text-[32px] font-medium text-[#6b757b] mb-4 active:text-[#2bd97c]">
                   Achieve greater success
                 </div>
-                <div className="text-[32px] font-medium text-[#6b757b] mb-4 active:text-[#2bd97c]">
+                <div className="text-2xl text-[32px] font-medium text-[#6b757b] mb-4 active:text-[#2bd97c]">
                   Improve your health
                 </div>
-                <div className="text-[32px] font-medium text-[#6b757b] mb-4 active:text-[#2bd97c]">
+                <div className="text-2xl text-[32px] font-medium text-[#6b757b] mb-4 active:text-[#2bd97c]">
                   Develop better parenting skills
                 </div>
-                <div className="text-[32px] font-medium text-[#6b757b] mb-4 active:text-[#2bd97c]">
+                <div className="text-2xl text-[32px] font-medium text-[#6b757b] mb-4 active:text-[#2bd97c]">
                   Increase happiness
                 </div>
-                <div className="text-[32px] font-medium text-[#6b757b] mb-4 last:mb-0 active:text-[#2bd97c]">
+                <div className="text-2xl text-[32px] font-medium text-[#6b757b] mb-4 last:mb-0 active:text-[#2bd97c]">
                   Be the best version of yourself!
                 </div>
               </div>
@@ -123,7 +132,7 @@ export default function Home() {
                   <div className="text-[#0365f2] text-xl font-semibold mt-1">
                     93%
                   </div>
-                  <div className="text-[20px] font-light text-[#394547]">
+                  <div className="text-base md:text-xl font-light text-[#394547]">
                     of Summarist members <b>significantly increases</b> reading
                     frequency.
                   </div>
@@ -132,7 +141,7 @@ export default function Home() {
                   <div className="text-[#0365f2] text-xl font-semibold mt-1">
                     96%
                   </div>
-                  <div className="text-[20px] font-light text-[#394547]">
+                  <div className="text-base md:text-xl font-light text-[#394547]">
                     of Summarist members <b>establish better</b> habits.
                   </div>
                 </div>
@@ -140,18 +149,18 @@ export default function Home() {
                   <div className="text-[#0365f2] text-xl font-semibold mt-1">
                     90%
                   </div>
-                  <div className="text-[20px] font-light text-[#394547]">
+                  <div className="text-base md:text-xl font-light text-[#394547]">
                     have made <b>significant positive</b>change to their lives.
                   </div>
                 </div>
               </div>
-              <div className="flex gap-[80px] mb-[96px]">
-                <div className="sm:order-1 md:order-0 w-full flex flex-col justify-center gap-[24px] bg-[#f1f6f4] py-10 px-6">
+              <div className="flex flex-col md:flex-row gap-8 md:gap-20">
+                <div className="order-1 md:order-0 w-full flex flex-col justify-center gap-6 bg-[#f1f6f4] py-10 px-6">
                   <div className="flex gap-4">
                     <div className="text-[#0365f2] text-xl font-semibold mt-1">
                       91%
                     </div>
-                    <div className="text-[20px] font-light text-[#394547]">
+                    <div className="text-base md:text-xl font-light text-[#394547]">
                       of Summarist members <b>report feeling more productive</b>{" "}
                       after incorporating the service into their daily routine.
                     </div>
@@ -160,7 +169,7 @@ export default function Home() {
                     <div className="text-[#0365f2] text-xl font-semibold mt-1">
                       94%
                     </div>
-                    <div className="text-[20px] font-light text-[#394547]">
+                    <div className="text-base md:text-xl font-light text-[#394547]">
                       of Summarist members <b>noticed an improvement</b> in
                       their overall comprehension and retention of information.
                     </div>
@@ -169,7 +178,7 @@ export default function Home() {
                     <div className="text-[#0365f2] text-xl font-semibold mt-1">
                       88%
                     </div>
-                    <div className="text-[20px] font-light text-[#394547]">
+                    <div className="text-base md:text-xl font-light text-[#394547]">
                       of Summarist members <b>feel more informed</b> about
                       current events and industry trends since using the
                       platform.
