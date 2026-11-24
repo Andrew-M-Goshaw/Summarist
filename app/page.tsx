@@ -5,7 +5,6 @@ import {
   AiOutlineSafety,
   AiFillCrown,
 } from "react-icons/ai";
-import "tailwindcss";
 
 export default function Home() {
   return (
