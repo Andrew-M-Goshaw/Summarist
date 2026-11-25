@@ -1,5 +1,4 @@
 import Image from "next/image";
-import logo from "../public/logo.png";
 
 export default function ForYou() {
   return (
@@ -27,7 +26,9 @@ export default function ForYou() {
           <figure className="flex max-w-[200px]">
             <Image
               className="w-full h-auto"
-              src={logo}
+              src="/logo.png"
+              width={200}
+              height={100}
               sizes="200px"
               alt="logo"
             />
