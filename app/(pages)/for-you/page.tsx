@@ -11,9 +11,7 @@ export default function ForYou() {
             {/* .search__wrapper class - just a spacer bar? */}
             <div className="relative flex items-center justify-between px-8 max-w-[1070px] mx-auto h-full">
               {/* no classes assigned to either figure or img */}
-              <figure>
-                <img src="logo" alt="" />
-              </figure>
+              <figure>{/* <img src="logo" alt="" /> */}</figure>
               {/* the main search bar container class */}
               <div className="flex items-center gap-6 max-w-[340px] w-full">
                 {/* container for just the search bar */}
@@ -168,13 +166,13 @@ export default function ForYou() {
             </div>
             {/* sidebar bottom - empty div */}
             <div className="">
-              {/* sidebar bottom link wrapper */}
+              {/* sidebar Settings link wrapper */}
               <div className="flex items-center h-[56px] text-[#032b41] mb-2 cursor-pointer">
                 {/* sidebar link line? */}
                 <div className="w-[5px] h-full bg-transparent mr-4"></div>
                 {/* icon wrapper */}
                 <div className="flex items-center justify-center mr-2 w-[24px] h-[24px]">
-                  {/* The Home Icon */}
+                  {/* The Settings Icon */}
                   <svg
                     stroke="currentColor"
                     fill="none"
@@ -190,6 +188,54 @@ export default function ForYou() {
                     ></path>
                   </svg>
                   <div className="">Settings</div>
+                </div>
+              </div>
+              {/* sidebar Help & Support link wrapper */}
+              <div className="flex items-center h-[56px] text-[#032b41] mb-2 cursor-pointer">
+                {/* sidebar link line? */}
+                <div className="w-[5px] h-full bg-transparent mr-4"></div>
+                {/* icon wrapper */}
+                <div className="flex items-center mr-2 w-[24px] h-[24px]">
+                  {/* The Help and Settings Icon - really weird */}
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M 9.09 9 a 3 3 0 0 1 5.83 1 c 0 2 -3 3 -3 3" />
+
+                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                  </svg>
+                  <div className="">Help & Support</div>
+                </div>
+              </div>
+              {/* sidebar Logout link wrapper */}
+              <div className="flex items-center h-[56px] text-[#032b41] mb-2 cursor-pointer">
+                {/* sidebar link line? */}
+                <div className="w-[5px] h-full bg-transparent mr-4"></div>
+                {/* icon wrapper */}
+                <div className="flex items-center mr-2 w-[24px] h-[24px]">
+                  {/* The Logout Icon */}
+                  <svg
+                    className="stroke-current fill-none h-4 w-4"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14" />
+                    <polyline points="16 17 21 12 16 7" />
+                    <line x1="21" y1="12" x2="9" y2="12" />
+                  </svg>
+                  <div className="">Logout</div>
                 </div>
               </div>
             </div>
